@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Setup Documentation Page</title>
+    <link rel="stytlesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Ubuntu Setup Documentation</header>
+      <ol>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Setting_Up_VirtualBox">Setting Up VirtualBox</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Creating_a_Virtual_Machine">Creating a Virtual Machine</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Installing_Ubuntu">Installing Ubuntu</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Git_Commands">Git Commands</a>
+        </li>
+      </ol>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <h3 class="bold">Overview</h3>
+            <p>Running Ubuntu in a virtualized environment on Windows allows seamless integration of Linux functionalities alongside Windows. This setup benefits developers, testers, and users needing Linux tools without dual-boot complexities. VirtualBox provides secure, isolated environments for software testing, development, and experimentation. It optimizes CPU, memory, and disk usage, supports snapshots for easy recovery, and facilitates efficient resource management.</p>
+            <p>Virtualization simplifies application testing and Linux learning by providing isolated environments for experimentation without risking the main OS. It supports compatibility testing, snapshots for quick rollback, and efficient resource management. Virtual machines also offer hands-on experience with Linux commands and system administration, making them valuable for both learning and development purposes.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Prerequisites">
+        <header>Prerequisites</header>
+          <article>
+            <p>Before installing Ubuntu in a virtualized environment on Windows using VirtualBox, ensure your system meets the following requirements:</p>
+            <ol>
+              <li class="bold">Hardware Requirements:</li>
+              <ul>
+                <li><strong>Processor:</strong> Intel VT-x or AMD-V virtualization hardware extensions should be enabled in your computer's BIOS settings.</li>
+                <li><strong>Memory:</strong> Allocate sufficient RAM for both Windows and Ubuntu. Typically, 4GB or more is recommended for a smooth experience, depending on your workload.</li>
+                <li><strong>Disk Space:</strong> Ensure you have ample free disk space for installing VirtualBox, Ubuntu, and any additional software or files you plan to work with.</li>
+              </ul>
+              <li class="bold">Software Requirements:</li>
+              <ul>
+                <li><strong>Virtualization Software:</strong> Download and install Oracle VM VirtualBox, the recommended virtualization software for running Ubuntu on Windows. Ensure you have the latest version compatible with your Windows operating system.</li>
+                <li><strong>Ubuntu ISO Image:</strong> Download the Ubuntu Desktop ISO file from the official Ubuntu website (<a href="https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a>). Choose the appropriate version, such as the LTS (Long Term Support) release, based on your needs.</li>
+              </ul>
+            </ol>
+            <p>Meeting these prerequisites ensures a smooth setup of Virtualized Ubuntu on your Windows system, facilitating efficient software testing, development, and learning experiences.</p>
+          </article>
+      </section>
+      <section class="main-section" id="Setting_Up_VirtualBox">
+        <header>Setting Up VirtualBox</header>
+        <article>
+          <p>To set up VirtualBox on your Windows system for running Ubuntu, follow these essential steps:</p>
+          <ol>
+            <li class="bold">Installing VirtualBox:</li>
+            <ul>
+              <li>Run the installer and follow the on-screen instructions to complete the installation.</li>
+              <li>Accept any prompts that require administrative privileges during the installation procedure.</li>
+            </ul>
+            <li class="bold">Configure VirtualBox</li>
+            <ul>
+              <li>Launch the VirtualBox from the your Desktop.</li>
+              <li>Familiarize yourself with the VirtualBox interface and settings</li>
+            </ul>
+            <li class="bold">Optional: Virtualization Support</li>
+            <ul>
+              <li>If needed, enable virtualization support (VT-x/AMD-V) in your computer's BIOS settings for optimal performance.</li>
+            </ul>
+          </ol>
+          <p>With VirtualBox installed and configured, you're ready to proceed to create a virtual machine (VM) and install Ubuntu. Refer to the next steps in your documentation for detailed guidance on setting up your Ubuntu VM within VirtualBox.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Creating_a_Virtual_Machine">
+        <header>Creating a Virtual Machine</header>
+        <article>
+          <p>To create a virtual machine (VM) in VirtualBox for running Ubuntu on Windows, follow these steps:</p>
+          <ol>
+            <li><b>Open VirtualBox:</b> Launch VirtualBox form your desktop or Start menu.</li>
+            <li><b>Click on "New":</b> In the VirtualBox window, click the "New" button to start creating a new VM.</li>
+            <li><b>Name and Operating System:</b> Enter a name for your VM (e.g., "Ubuntu") and select the operating system type and version (e.g., Linux and Ubuntu).</li>
+            <li><b>Allocate Memory:</b> Choose the amount of RAM to allocate to the VM. It's recommended to allocate at least 2GB for Ubuntu, depending on your system's resources.</li>
+            <li><b>Create a Virtual Hard Disk:</b> Create a new virtual hard disk for the VM. Select the disk file type and choose dynamically allocated or fixed size depending on your preference.</li>
+            <li><b>Specify Disk File Location and Size:</b> Set the location and size of the virtual disk. Allocate sufficient space for Ubuntu and any applications you plan to install.</li>
+            <li><b>Finish and Create:</b> Click "Create" to finish creating the VM. VirtualBox will now create the VM with the specified settings.</li>
+          </ol>
+          <p>Once the VM is created, you can proceed to install Ubuntu on the virtual machine. Refer to your Ubuntu installatin guide within VirtualBox for detailed steps on installing the operating system and configuring the VM for optimal performance.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Installing_Ubuntu">
+        <header>Installing Ubuntu</header>
+        <article>
+          <p>To install Ubuntu in VirtualBox on your Windows system, follow these steps:</p>
+          <ol>
+            <li class="bold">Start the VM:</li>
+            <ul>
+              <li>With the Ubuntu ISO attached, start your VM by clicking "Start" in VirtualBox.</li>
+            </ul>
+            <li class="bold">Install Ubuntu:</li>
+            <ul>
+              <li>The VM will boot from the Ubuntu ISO. Follow the on-screen instructions to install Ubuntu></li>
+              <li>Choose your language, keyboard layout, and installation type (e.g., Erase disk and install Ubuntu or Something else for custom partitioning).</li>
+              <li>Create a user account and password when prompted.</li>
+            </ul>
+            <li class="bold">Complete Installation:</li>
+            <ul>
+              <li>Once installation completes, restart the VM. Remove the Ubuntu ISO from the VM's virtual disk drive in VirtualBox settings.</li>
+            </ul>
+            <li class="bold">Install VirtualBox Guest Additions: (Optional but recommended):</li>
+            <ul>
+              <li>In the running Ubuntu VM window, click on "Devices" > "Insert Guest Additions CD image...".</li>
+              <li>Open a terminal (Ctrl+Alt+T) in Ubuntu and run the command given below:</li>
+              <code>sudo sh /media/<b>&ltUsername&gt</b>/VBox_GAs_<b>&ltversion&gt</b>/VBoxLinuxAdditions.run</code>
+              <li>Restart the VM after installation completes for enhanced performance and features.</li>
+            </ul>
+          </ol>
+          <p>By following these steps, you can install Ubuntu in VirtualBox on your Windows system and begin using Ubuntu alongside your existing operating system for various tasks and projects.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Git_Commands">
+        <header>Git Commands</header>
+        <article>
+          <p>Here are some essential Git commands commonly used for version control and collaboration in software development</p>
+          <ol>
+            <li class="bold">Initialize a Git Repository:</li>
+            <code>git <span class="blue">init<span></code>
+            <p>Initialize a new Git repository in the current directory.</p>
+            <li class="bold">Clone a Repository:</li>
+            <code>git <span class="brown">clone</span> &ltrepository_url&gt</code>
+            <p>Clone a remote repository from the specified URl to your local machine.</p>
+            <li class="bold">Add Files to Staging Area:</li>
+            <code>git <span class="blue">add</span> &ltfile_name&gt</code>
+            <p>Add specified file(s) to the staging area to be included in the next commit.</p>
+            <li class="bold">Commit Changes:</li>
+            <code>git <span class="blue">commit</span> "Commit message"</code>
+            <p>Record changes to the repository with a descriptive commit message.</p>
+            <li class="bold">Push Changes to Remote Repository:</li>
+            <code>git <span class="blue">push</span> origin &ltbranch_name&gt</code>
+            <p>Upload local commits to the remote repository specified by <code>origin &ltbranch_name&gt</code></p>
+            <li class="bold">Pull Latest Changes from Remote Repository</li>
+            <code>git <span class="blue">pull</span> origin &ltbranch_name&gt</code>
+            <p>Fetch and merge changes from the remote repository into the current branch.</p>
+            <li class="bold">Check Status of Working Tree:</li>
+            <code>git <span class="brown">status</span></code>
+            <p>Display the current state of the working directory and staging area.</p>
+            <li class="bold">View Commit History</li>
+            <code>git <span class="brown">log</span></code>
+            <p>Display a list of commits in reverse chronological order.</p>
+            <li class="bold">Create a New Branch:</li>
+            <code>git <span class="blue">branch</span> &ltbranch_name&gt</code>
+            <p>Create a new branch based on the current <code>HEAD</code></p>
+            <li class="bold">Switch Branches:</li>
+            <code>git <span class="brown">checkout</span> &ltbranch_name&gt</code>
+            <p>Switch to the specified branch and update the working directory.</p>
+          </ol>
+          <p>These commands from the core workflow for using Git to manage version, collaborate with others, and maintain project history effectively. Adjust parameters and options based on your specific project needs and Git repository setup.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
